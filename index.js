@@ -126,7 +126,6 @@ Baby.prototype.play = function() {
   return (`${this.name} is playing with ${this.favoriteToy} `)
 }
 
-// Baby.prototype = Object.create(Person.prototype);
 
 Baby.prototype = Object.create(Person.prototype, {
 	play: {
@@ -142,10 +141,10 @@ babyOne.play()
   TASK 4
 
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+  1. when using 'this' in the global scope, 'this' is the window and all of it's contents
+  2. when a function is called by a preceding dot, 'this' is whatever comes before the dot.
+  3. when used inside a constructor function 'this' refers to the specific instance of the object created
+  4. when using .call oor .apply - 'this' is explicitly defined 
 */
 
 
